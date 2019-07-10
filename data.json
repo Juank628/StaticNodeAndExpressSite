@@ -1,0 +1,86 @@
+{
+    "projects": [
+        {
+            "id": "0",
+            "project_name": "Random quote generator",
+            "description": "Generate random quote and show it every 30 seconds or manualy",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "Java Script"
+            ],
+            "live_link": "https://juank628.github.io/RandomQuoteGenerator/",
+            "github_link": "https://github.com/Juank628/RandomQuoteGenerator.git",
+            "image_urls": [
+                "./images/"
+            ]
+        },
+
+        {
+            "id": "1",
+            "project_name": "List pagination and filtering",
+            "description": "Display and paginate a list of people. Search option is available.",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "Java Script"
+            ],
+            "live_link": "https://juank628.github.io/ListPaginationAndFiltering/",
+            "github_link": "https://github.com/Juank628/ListPaginationAndFiltering.git",
+            "image_urls": [
+                "./images/"
+            ]
+        },
+
+        {
+            "id": "2",
+            "project_name": "Interactive form",
+            "description": "Real time validation form",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "Java Script",
+                "JQuery"
+            ],
+            "live_link": "https://juank628.github.io/InteractiveFormV1/",
+            "github_link": "https://github.com/Juank628/InteractiveFormV1.git",
+            "image_urls": [
+                "./images/"
+            ]
+        },
+
+        {
+            "id": "3",
+            "project_name": "OOP game",
+            "description": "A game where you have tu guess a phrase and enter it usin on screen keyboard",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "Java Script",
+                "JQuery"
+            ],
+            "live_link": "https://juank628.github.io/OopGameV2/",
+            "github_link": "https://github.com/Juank628/OopGameV2.git",
+            "image_urls": [
+                "./images/"
+            ]
+        },
+
+        {
+            "id": "4",
+            "project_name": "Public API request",
+            "description": "Generate a contact list reading the info of each contact from an API",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "Java Script",
+                "AJAX"
+            ],
+            "live_link": "https://juank628.github.io/PublicApiRequests/",
+            "github_link": "https://github.com/Juank628/PublicApiRequests.git",
+            "image_urls": [
+                "./images/"
+            ]
+        }
+    ]
+}
