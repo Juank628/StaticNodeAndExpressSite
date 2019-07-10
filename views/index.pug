@@ -20,8 +20,9 @@ block content
       
       //- Here's what the Pug for each project example should look like. 
 
+    each project in projects
       .cell
-        a(href='#')
-          img.thumbnail(src='https://placehold.it/550x550')
-          h5 Title
+        a(href= `project/${project.id}`)
+          img.thumbnail(src= project.image_urls[0])
+          h5 #{project.project_name}
       

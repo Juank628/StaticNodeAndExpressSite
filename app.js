@@ -8,7 +8,7 @@ app.set("view engine", "pug");
 app.use("/static", express.static("public"));
 
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("index", data);
 });
 
 app.get("/about", (req, res) => {

@@ -12,7 +12,7 @@
             "live_link": "https://juank628.github.io/RandomQuoteGenerator/",
             "github_link": "https://github.com/Juank628/RandomQuoteGenerator.git",
             "image_urls": [
-                "./images/"
+                "/static/images/prj0_thumbnail.png"
             ]
         },
 
@@ -28,7 +28,7 @@
             "live_link": "https://juank628.github.io/ListPaginationAndFiltering/",
             "github_link": "https://github.com/Juank628/ListPaginationAndFiltering.git",
             "image_urls": [
-                "./images/"
+                "/static/images/prj1_thumbnail.png"
             ]
         },
 
@@ -45,7 +45,7 @@
             "live_link": "https://juank628.github.io/InteractiveFormV1/",
             "github_link": "https://github.com/Juank628/InteractiveFormV1.git",
             "image_urls": [
-                "./images/"
+                "/static/images/prj2_thumbnail.png"
             ]
         },
 
@@ -62,7 +62,7 @@
             "live_link": "https://juank628.github.io/OopGameV2/",
             "github_link": "https://github.com/Juank628/OopGameV2.git",
             "image_urls": [
-                "./images/"
+                "/static/images/prj3_thumbnail.png"
             ]
         },
 
@@ -79,7 +79,7 @@
             "live_link": "https://juank628.github.io/PublicApiRequests/",
             "github_link": "https://github.com/Juank628/PublicApiRequests.git",
             "image_urls": [
-                "./images/"
+                "/static/images/prj4_thumbnail.png"
             ]
         }
     ]
