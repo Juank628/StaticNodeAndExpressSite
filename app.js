@@ -7,6 +7,33 @@ app.set("view engine", "pug");
 
 app.use("/static", express.static("public"));
 
+/*
+------Middlewares-----
+*/
+app.use((req,res,next)=>{
+  if(!data.projects){
+    const err = new Error('No data')
+    err.status = 500
+    console.error(err.message)
+    return next(err)
+  }
+  next()
+})
+
+app.use('/project/:id',(req,res,next)=>{
+  const regEx = /^[0-4]$/
+  if(!regEx.test(req.params.id)){
+    const err = new Error('project not found')
+    err.status = 404
+    return next(err)
+  }
+  next()
+})
+
+/*
+-------Routes-------
+*/
+
 app.get("/", (req, res) => {
   res.render("index", data);
 });
@@ -15,11 +42,7 @@ app.get("/about", (req, res) => {
   res.render("about");
 });
 
-//project route: id is optional. If not present, route will be redirected to project/1
-app.get("/project/:id?", (req, res) => {
-  if (!req.params.id) {
-    return res.redirect("/project/1");
-  }
+app.get("/project/:id", (req, res) => {
   const { id } = req.params;
   const project = data.projects[id];
   const projectData = {
@@ -33,4 +56,23 @@ app.get("/project/:id?", (req, res) => {
   res.render("project", projectData);
 });
 
+app.use((req,res,next)=>{
+  const err = new Error('page not found')
+  err.status = 404
+  next(err)
+})
+
+/*
+----Error middleware----
+*/
+app.use((err,req,res,next)=>{
+  res.status(err.status)
+  res.render('error', {err})
+  console.log(err.message)
+  console.log(`status code ${err.status}`)
+})
+
+/*
+----Port selection and running message
+*/
 app.listen(port, () => console.log(`application running on port ${port}`));
