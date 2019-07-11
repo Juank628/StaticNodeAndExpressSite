@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-html(class="no-js" lang="en" dir="ltr")
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='x-ua-compatible', content='ie=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title Portfolio Site
-    link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800', rel='stylesheet')
-    link(rel='stylesheet', href='/static/css/foundation.css')
-    link(rel='stylesheet', href='/static/css/style.css')
-  body
-    h1 An error occured :(
-    h2 #{err.message}
-    h3 #{err.status}
+extends layout.pug
+block content
+  .error-page
+    h2 An error occured :(
+    h5 #{err.message}
+    h5 Status: #{err.status}
+    p.stack #{err.stack}
+    img(src='/static/images/error.png', alt='image not found')

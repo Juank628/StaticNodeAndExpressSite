@@ -10,25 +10,25 @@ app.use("/static", express.static("public"));
 /*
 ------Middlewares-----
 */
-app.use((req,res,next)=>{
-  if(!data.projects){
-    const err = new Error('No data')
-    err.status = 500
-    console.error(err.message)
-    return next(err)
+app.use((req, res, next) => {
+  if (!data.projects) {
+    const err = new Error("No data");
+    err.status = 500;
+    console.error(err.message);
+    return next(err);
   }
-  next()
-})
+  next();
+});
 
-app.use('/project/:id',(req,res,next)=>{
-  const regEx = /^[0-4]$/
-  if(!regEx.test(req.params.id)){
-    const err = new Error('project not found')
-    err.status = 404
-    return next(err)
+app.use("/project/:id", (req, res, next) => {
+  const regEx = /^[0-4]$/;
+  if (!regEx.test(req.params.id)) {
+    const err = new Error("project not found");
+    err.status = 404;
+    return next(err);
   }
-  next()
-})
+  next();
+});
 
 /*
 -------Routes-------
@@ -56,21 +56,25 @@ app.get("/project/:id", (req, res) => {
   res.render("project", projectData);
 });
 
-app.use((req,res,next)=>{
-  const err = new Error('page not found')
-  err.status = 404
-  next(err)
-})
+app.get("/twitter", (req, res) => {
+  res.render("twitter");
+});
+
+app.use((req, res, next) => {
+  const err = new Error("page not found");
+  err.status = 404;
+  next(err);
+});
 
 /*
 ----Error middleware----
 */
-app.use((err,req,res,next)=>{
-  res.status(err.status)
-  res.render('error', {err})
-  console.log(err.message)
-  console.log(`status code ${err.status}`)
-})
+app.use((err, req, res, next) => {
+  res.status(err.status);
+  res.render("error", { err });
+  console.log(err.message);
+  console.log(`status code ${err.status}`);
+});
 
 /*
 ----Port selection and running message

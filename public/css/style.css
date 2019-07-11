@@ -114,6 +114,14 @@ a:hover{
 
   .portfolio-index .thumbnail{
     margin-bottom: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  }
+
+  .portfolio-index .thumbnail-title{
+    font-family: 'Merriweather';
+    font-size: 20px;
+    color: rgba(0,0,0,0.75);
+    margin-top: 4px
   }
 
   .portfolio-index a{
@@ -148,3 +156,29 @@ a:hover{
 .portfolio-bio{
     line-height: 25px;
 }
+
+.error-page{
+  background-color: rgb(238,237,237);
+  text-align: center;
+  height: 100vh;
+}
+
+.error-page img {
+  max-width: 300px;
+}
+
+.stack {
+  font-size: 12px;
+  text-align: left
+}
+
+.twitter-page{
+  background-color: rgb(238,237,237);
+  text-align: center
+}
+
+.twitter-page img{
+  max-width: 500px;
+}
+
+

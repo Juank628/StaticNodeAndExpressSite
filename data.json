@@ -12,7 +12,10 @@
             "live_link": "https://juank628.github.io/RandomQuoteGenerator/",
             "github_link": "https://github.com/Juank628/RandomQuoteGenerator.git",
             "image_urls": [
-                "/static/images/prj0_thumbnail.png"
+                "/static/images/prj0_thumbnail.png",
+                "/static/images/prj0_img_0.png",
+                "/static/images/prj0_img_1.png",
+                "/static/images/prj0_img_2.png"
             ]
         },
 
@@ -28,7 +31,10 @@
             "live_link": "https://juank628.github.io/ListPaginationAndFiltering/",
             "github_link": "https://github.com/Juank628/ListPaginationAndFiltering.git",
             "image_urls": [
-                "/static/images/prj1_thumbnail.png"
+                "/static/images/prj1_thumbnail.png",
+                "/static/images/prj1_img_0.png",
+                "/static/images/prj1_img_1.png",
+                "/static/images/prj1_img_2.png"
             ]
         },
 
@@ -45,7 +51,10 @@
             "live_link": "https://juank628.github.io/InteractiveFormV1/",
             "github_link": "https://github.com/Juank628/InteractiveFormV1.git",
             "image_urls": [
-                "/static/images/prj2_thumbnail.png"
+                "/static/images/prj2_thumbnail.png",
+                "/static/images/prj2_img_0.png",
+                "/static/images/prj2_img_1.png",
+                "/static/images/prj2_img_2.png"
             ]
         },
 
@@ -62,7 +71,10 @@
             "live_link": "https://juank628.github.io/OopGameV2/",
             "github_link": "https://github.com/Juank628/OopGameV2.git",
             "image_urls": [
-                "/static/images/prj3_thumbnail.png"
+                "/static/images/prj3_thumbnail.png",
+                "/static/images/prj3_img_0.png",
+                "/static/images/prj3_img_1.png",
+                "/static/images/prj3_img_2.png"
             ]
         },
 
@@ -79,7 +91,10 @@
             "live_link": "https://juank628.github.io/PublicApiRequests/",
             "github_link": "https://github.com/Juank628/PublicApiRequests.git",
             "image_urls": [
-                "/static/images/prj4_thumbnail.png"
+                "/static/images/prj4_thumbnail.png",
+                "/static/images/prj4_img_0.png",
+                "/static/images/prj4_img_1.png",
+                "/static/images/prj4_img_2.png"
             ]
         }
     ]
