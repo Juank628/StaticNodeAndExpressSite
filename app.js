@@ -70,10 +70,10 @@ app.use((req, res, next) => {
 ----Error middleware----
 */
 app.use((err, req, res, next) => {
-  res.status(err.status);
-  res.render("error", { err });
   console.log(err.message);
   console.log(`status code ${err.status}`);
+  res.status(err.status);
+  res.render("error", { err });
 });
 
 /*
